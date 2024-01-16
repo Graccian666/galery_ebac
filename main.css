@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: #5f27cd;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form{
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2{
+    margin-bottom: 8px;
+}
+
+
+input, button{
+    padding: 8px;
+}
+
+button{
+    background-color: #009432;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#cancel-button{
+    background-color: rgb(136, 16, 16);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    list-style: none;
+    max-width: 25%; 
+    position: relative;
+    max-height: 185px;
+    overflow-y: hidden ;
+}
+
+ul li img{
+    width: 100%;
+}
+
+.link-image{
+    padding: 16px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.link-image a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul li:hover .link-image{
+    opacity: 1;
+}
